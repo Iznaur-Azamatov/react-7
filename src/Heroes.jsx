@@ -11,7 +11,7 @@ const Heroes = () => {
   ]);
 
   const handleDelete = (index) => {
-    const updatedNames = names.filter((item, id) => id !== index);
+    const updatedNames = names.filter((_, id) => id !== index);
     setNames(updatedNames);
   };
 
